@@ -5,40 +5,17 @@
 }
 
 body {
-  /* 1. 核心普鲁士蓝渐变背景 */
-  background: linear-gradient(
-    135deg,
-    #003153 0%,   /* 深普鲁士蓝 */
-    #00477a 35%,  /* 中普鲁士蓝 */
-    #1a5a8f 65%,  /* 浅普鲁士蓝 */
-    #e6edf5 100%  /* 带蓝调的灰白，避免死白 */
-  );
-
-  /* 2. 叠加噪点纹理，打破纯色单调感 */
-  background-image: 
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E"),
-    linear-gradient(
-      135deg,
-      #003153 0%,
-      #00477a 35%,
-      #1a5a8f 65%,
-      #e6edf5 100%
-    );
-
-  /* 3. 固定背景，滚动时效果不变 */
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #003153;
+  background-image: linear-gradient(160deg, #002b47 0%, #00477a 50%, #b3c7e4 100%);
+  color: #e5e5e5;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* 确保背景铺满全屏 */
-}
-
-/* 可选：给内容容器加毛玻璃效果，强化层次 */
-.card, .container {
-  background: rgba(0, 49, 83, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* 兼容Safari */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
 }
 
 .site-header {
