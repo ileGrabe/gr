@@ -3,3 +3,7 @@ url: "https://ilegrabe.github.io/gr/" # 固定格式，替换成你的用户名
 baseurl: "/gr" # 必须和仓库名一致，前后有斜线
 title: "île" # 可选，自定义
 description: "τὸ μὴ δῦνόν ποτε πῶς τις λάθοι" # 可选，自定义
+# 必须加这两行，否则 paginator 失效
+paginate: 10  # 每页显示10篇
+plugins:
+  - jekyll-paginate  # 声明分页插件（GitHub Pages 必需）
