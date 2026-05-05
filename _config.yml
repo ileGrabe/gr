@@ -2,7 +2,7 @@ title: 极简日记博客
 description: "日常记录 / 随笔 / 碎片灵感 · Wiley 风格复刻"
 baseurl: ""
 url: ""
-github_username: your-github-name
+github_username:ileGrabe
 
 # 博客设置
 permalink: /:title.html
