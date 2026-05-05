@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
-  <!-- 关键：用绝对路径引用 CSS，避免路径问题 -->
+  <!-- 关键：用 relative_url 自动适配 baseurl -->
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
