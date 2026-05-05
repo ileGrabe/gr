@@ -6,16 +6,14 @@
 
 body {
   font-family: Georgia, 'Times New Roman', serif;
-  background-color: #003153;
-  background-image: linear-gradient(160deg, #002b47 0%, #00477a 50%, #b3c7e4 100%);
-  color: #e5e5e5;
+  /* 精准还原你这张图里的普鲁士蓝色号 */
+  background-color: #0047ab;
+  color: #ffffff;
   max-width: 740px;
   margin: 0 auto;
   padding: 50px 20px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .site-header {
