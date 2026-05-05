@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="site-title"><a href="/" style="color:#fff;text-decoration:none">{{ site.title }}</a></h1>
+    <p class="site-desc">{{ site.description }}</p>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <p>Updated: {{ site.time | date: "%Y/%m/%d" }}<br>极简日记博客 · Wiley 风格复刻</p>
+  </footer>
+</body>
+</html>
