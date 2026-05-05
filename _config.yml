@@ -1,6 +1,10 @@
 title: 极简日记博客
 description: 日常记录 / 随笔 / 碎片灵感 · Wiley 风格复刻
 
+# 关键：你的仓库名是 gr，所以 baseurl 必须是 /gr
+baseurl: "/gr"
+url: "https://ileGrabe.github.io"
+
 # 分页配置
 paginate: 10
 paginate_path: /page/:num/
