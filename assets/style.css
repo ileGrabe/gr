@@ -7,7 +7,7 @@
 
 body {
   font-family: Georgia, 'Times New Roman', serif;
-  background: #1a1a1a;
+  background-color: #1a1a1a;
   color: #e5e5e5;
   max-width: 740px;
   margin: 0 auto;
@@ -17,22 +17,22 @@ body {
 }
 
 /* 头部 */
-header {
+.site-header {
   border-bottom: 1px solid #383838;
   padding-bottom: 24px;
   margin-bottom: 50px;
 }
 
-.site-title {
+.site-title a {
   font-size: 26px;
-  font-weight: normal;
   color: #fff;
-  margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .site-desc {
   color: #aaa;
   font-size: 15px;
+  margin-top: 8px;
 }
 
 /* 文章卡片列表 */
@@ -40,19 +40,17 @@ header {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-bottom: 60px;
 }
 
 .post-card {
-  background: #252525;
+  background-color: #252525;
   padding: 28px 32px;
   border-radius: 8px;
-  transition: 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 .post-card:hover {
-  background: #2d2d2d;
-  transform: translateY(-2px);
+  background-color: #2d2d2d;
 }
 
 .post-date {
@@ -83,6 +81,7 @@ header {
 .more {
   color: #ddd;
   font-size: 17px;
+  text-decoration: underline;
   text-underline-offset: 3px;
   float: right;
 }
@@ -96,20 +95,25 @@ header {
 /* 分页 */
 .pagination {
   text-align: center;
-  color: #888;
   margin: 50px 0;
+  color: #888;
 }
 
 .pagination a {
   color: #ccc;
-  margin: 0 6px;
 }
 
 /* 标签 */
 .tags {
-  margin: 40px 0;
+  margin-top: 60px;
   padding-top: 30px;
   border-top: 1px solid #333;
+}
+
+.tags h3 {
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 14px;
 }
 
 .tag-list {
@@ -117,7 +121,6 @@ header {
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  margin-top: 14px;
 }
 
 .tag-list a {
@@ -125,12 +128,12 @@ header {
   padding: 4px 10px;
   border: 1px solid #444;
   border-radius: 4px;
-  font-size: 14px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .tag-list a:hover {
-  background: #333;
+  background-color: #333;
   color: #fff;
 }
 
@@ -143,6 +146,13 @@ header {
 
 .post-content p {
   margin-bottom: 22px;
+}
+
+.back-link {
+  color: #ccc;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
 }
 
 /* 底部 */
