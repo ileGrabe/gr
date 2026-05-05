@@ -7,9 +7,9 @@ title: 首页
   {% for post in paginator.posts %}
   <article class="post-card clearfix">
     <div class="post-date">{{ post.date | date: "%Y年%m月%d日" }}</div>
-    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    <a href="{{ post.url }}" class="more">阅读全文 ➜</a>
+    <a href="{{ post.url | relative_url }}" class="more">阅读全文 ➜</a>
   </article>
   {% endfor %}
 </div>
@@ -17,19 +17,17 @@ title: 首页
 <!-- 分页 -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">上一页</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
   {% endif %}
-
   <span>第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
-
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">下一页</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">下一页</a>
   {% endif %}
 </div>
 
 <!-- 标签栏 -->
 <div class="tags">
-  <h3 style="font-weight:normal;color:#fff;">分类 / 标签</h3>
+  <h3>分类 / 标签</h3>
   <ul class="tag-list">
     <li><a href="#">随笔</a></li>
     <li><a href="#">艺术</a></li>
