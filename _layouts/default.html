@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <!-- 关键：用绝对路径引用 CSS，避免路径问题 -->
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1 class="site-title"><a href="/" style="color:#fff;text-decoration:none">{{ site.title }}</a></h1>
+  <header class="site-header">
+    <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <p class="site-desc">{{ site.description }}</p>
   </header>
 
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>
 
   <footer>
     <p>Updated: {{ site.time | date: "%Y/%m/%d" }}<br>极简日记博客 · Wiley 风格复刻</p>
