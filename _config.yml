@@ -1,12 +1,5 @@
-title: ile
-description: 
-# 关键1：仓库名是gr，baseurl必须写/gr（固定格式）
-baseurl: "/gr"
-# 关键2：你的GitHub Pages根域名
-url: "https://ileGrabe.github.io"
-
-paginate: 10
-paginate_path: /page/:num/
-
-plugins:
-  - jekyll-paginate
+# _config.yml 关键配置
+url: "https://ilegrabe.github.io/gr/" # 固定格式，替换成你的用户名
+baseurl: "/gr" # 必须和仓库名一致，前后有斜线
+title: "你的博客标题" # 可选，自定义
+description: "你的博客描述" # 可选，自定义
