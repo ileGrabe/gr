@@ -6,9 +6,8 @@
 
 body {
   font-family: Georgia, 'Times New Roman', serif;
-  /* 精准还原你这张图里的普鲁士蓝色号 */
-  background-color: #0047ab;
-  color: #ffffff;
+  background-color: #1a1a1a;
+  color: #e5e5e5;
   max-width: 740px;
   margin: 0 auto;
   padding: 50px 20px;
