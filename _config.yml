@@ -1,0 +1,19 @@
+title: 极简日记博客
+description: "日常记录 / 随笔 / 碎片灵感 · Wiley 风格复刻"
+baseurl: ""
+url: ""
+github_username: your-github-name
+
+# 博客设置
+permalink: /:title.html
+paginate: 10
+paginate_path: /page/:num/
+
+# 主题（无主题，纯自定义）
+theme:
+plugins:
+  - jekyll-paginate
+
+# 作者
+author:
+  name: 你的名字
