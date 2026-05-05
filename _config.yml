@@ -1,5 +1,5 @@
-title: 极简日记博客
-description: 日常记录 / 随笔 / 碎片灵感
+title: ile
+description: 
 # 关键1：仓库名是gr，baseurl必须写/gr（固定格式）
 baseurl: "/gr"
 # 关键2：你的GitHub Pages根域名
