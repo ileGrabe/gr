@@ -1,0 +1,155 @@
+/* 全局重置 & 基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #1a1a1a;
+  color: #e5e5e5;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 头部 */
+header {
+  border-bottom: 1px solid #383838;
+  padding-bottom: 24px;
+  margin-bottom: 50px;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.site-desc {
+  color: #aaa;
+  font-size: 15px;
+}
+
+/* 文章卡片列表 */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+.post-card {
+  background: #252525;
+  padding: 28px 32px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.post-card:hover {
+  background: #2d2d2d;
+  transform: translateY(-2px);
+}
+
+.post-date {
+  font-size: 15px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.post-title {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.post-title a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+.post-excerpt {
+  color: #ccc;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.more {
+  color: #ddd;
+  font-size: 17px;
+  text-underline-offset: 3px;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 分页 */
+.pagination {
+  text-align: center;
+  color: #888;
+  margin: 50px 0;
+}
+
+.pagination a {
+  color: #ccc;
+  margin: 0 6px;
+}
+
+/* 标签 */
+.tags {
+  margin: 40px 0;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: 14px;
+}
+
+.tag-list a {
+  color: #ccc;
+  padding: 4px 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.tag-list a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* 文章详情页 */
+.post-content {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.post-content p {
+  margin-bottom: 22px;
+}
+
+/* 底部 */
+footer {
+  margin-top: 80px;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 24px;
+}
